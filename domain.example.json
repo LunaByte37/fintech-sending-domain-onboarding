@@ -1,0 +1,15 @@
+{
+  "domain": "mail.example.com",
+  "spf": {
+    "name": "mail.example.com",
+    "content": "v=spf1 include:spf.example.net -all"
+  },
+  "dkim": {
+    "name": "selector1._domainkey.mail.example.com",
+    "content": "selector1.example-dkim-host.net"
+  },
+  "dmarc": {
+    "name": "_dmarc.mail.example.com",
+    "content": "v=DMARC1; p=quarantine; rua=mailto:dmarc@example.com"
+  }
+}
